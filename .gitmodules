@@ -1,0 +1,3 @@
+[submodule "MatchingGame/Assets/Tools"]
+	path = MatchingGame/Assets/Tools
+	url = https://github.com/SnortingBaguette/Tools
