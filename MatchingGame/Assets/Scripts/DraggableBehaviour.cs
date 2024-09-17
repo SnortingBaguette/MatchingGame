@@ -34,6 +34,15 @@ public class DraggableBehaviour : MonoBehaviour
     }
     private void OnMouseUp()
     {
+        if (draggable)
+        {
+            draggable = false;
+            endDragEvent.Invoke();
+        }
+    }
+
+    public void DisableDraggingOnDeath()
+    {
         draggable = false;
         endDragEvent.Invoke();
     }
