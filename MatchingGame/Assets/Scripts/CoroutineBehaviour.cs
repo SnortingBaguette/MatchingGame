@@ -16,12 +16,13 @@ public class CoroutineBehaviour : MonoBehaviour
     private void Start()
     {
         startEvent.Invoke();
+        wfsObj = new WaitForSeconds(seconds);
+        wffuObj = new WaitForFixedUpdate();
     }
 
     private IEnumerator Counting()
     {
-        wfsObj = new WaitForSeconds(seconds);
-        wffuObj = new WaitForFixedUpdate();
+
 
         startCountEvent.Invoke();
         yield return wfsObj;
