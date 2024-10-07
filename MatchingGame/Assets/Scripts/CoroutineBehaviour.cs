@@ -54,4 +54,10 @@ public class CoroutineBehaviour : MonoBehaviour
     {
         StartCoroutine(Counting());
     }
+
+    public bool CanRun
+    {
+        get => canRun;
+        set => canRun = value;
+    }
 }
